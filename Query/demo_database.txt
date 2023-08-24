@@ -4,7 +4,7 @@ CREATE TABLE `balance` (
   `last_bal` varchar(45) DEFAULT NULL,
   `current_bal` varchar(45) DEFAULT NULL
 )
-INSERT(`From_ID`,`last_bal`,`current_bal`) INTO `balance` VALUES ('Assign','0','1000');
+INSERT INTO `balance`(`From_ID`,`last_bal`,`current_bal`) VALUES ('Assign','0','1000');
 
 CREATE TABLE `company` (
   `company_name` varchar(255) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
-INSERT INTO `item` VALUES ('I0001','Pen',0),('I0002','Pencil',10),('I0003','Eraser',0),('I0004','Sharpener',0),('I0005','Geometry Box',0),('I0006','tape',0);
+INSERT INTO `item` VALUES ('I0001','Pen',0),('I0002','Pencil',10),('I0003','Eraser',0),('I0004','Sharpener',0),('I0005','Geometry Box',0));
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 CREATE TABLE `purchase` (
